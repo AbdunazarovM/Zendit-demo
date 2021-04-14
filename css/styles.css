@@ -294,6 +294,7 @@ a{
 
 .activ-span{
     font-weight: 500;
+    word-spacing: -1px;
     font-size: 20px;
 }
 
@@ -331,14 +332,16 @@ a{
 
 .offer-text{
     font-weight: 700;
-    font-size: 19px;
+    word-spacing: -1px;
+    font-size: 20px;
     margin: 0;
     margin-bottom: 10px;
 }
 
 .offer-span{
     font-weight: 500;
-    font-size: 19px;
+    word-spacing: -1px;
+    font-size: 20px;
 }
 
 /*Special offers tugadi*/
@@ -366,7 +369,6 @@ a{
     font-weight: bold;
     font-size: 52px;
     line-height: 78px;
-    
     color: #172F53;
 }
 
@@ -375,7 +377,6 @@ a{
     margin-bottom: 65px;
     font-size: 30px;
     line-height: 45px;
-
     color: #7D7D7D;
 }
 
