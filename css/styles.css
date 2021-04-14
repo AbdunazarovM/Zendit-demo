@@ -486,6 +486,7 @@ a{
 
 
 .footer-title{
+    margin-top: 0;
     margin-bottom: 54px;
     color: white;
     font-size: 27px;
