@@ -286,7 +286,8 @@ a{
 
 .activ-text{
     font-weight: 700;
-    font-size: 19px;
+    word-spacing: -1px;
+    font-size: 20px;
     margin: 0;
     margin-bottom: 10px;
 }
