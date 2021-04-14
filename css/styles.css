@@ -489,7 +489,7 @@ a{
     justify-content: space-around;
 }
 
-.footer-list{
+.footer-list:not(:last-child){
     margin-right: 110px;
 }
 
