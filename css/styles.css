@@ -286,16 +286,14 @@ a{
 
 .activ-text{
     font-weight: 700;
-    word-spacing: -1px;
-    font-size: 20px;
+    font-size: 19px;
     margin: 0;
     margin-bottom: 10px;
 }
 
 .activ-span{
     font-weight: 500;
-    word-spacing: -1px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .offer-title{
@@ -332,16 +330,14 @@ a{
 
 .offer-text{
     font-weight: 700;
-    word-spacing: -1px;
-    font-size: 20px;
+    font-size: 19px;
     margin: 0;
     margin-bottom: 10px;
 }
 
 .offer-span{
     font-weight: 500;
-    word-spacing: -1px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /*Special offers tugadi*/
