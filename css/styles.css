@@ -489,6 +489,10 @@ a{
     justify-content: space-around;
 }
 
+.footer-list{
+    margin-right: 110px;
+}
+
 
 .footer-title{
     margin-top: 0;
