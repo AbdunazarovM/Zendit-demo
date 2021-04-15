@@ -215,6 +215,7 @@ a{
     background-color: #21d8e3;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /*Form tugadi*/
@@ -396,6 +397,7 @@ a{
     text-decoration: none;
     background: #21D8E3;
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 .discount-button::after{
