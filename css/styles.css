@@ -71,10 +71,10 @@ a{
 
 .nav-item{
     margin-left: 94px;
-    display: flex;
 }
 
 .nav-item-link::after{
+    display: inline-block;
     content: "";
     margin-left: 8px;
     background-image: url(../images/vector.png);
