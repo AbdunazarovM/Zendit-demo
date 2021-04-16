@@ -102,6 +102,7 @@ a{
 
 .nav-item:hover .dropdawn{
     display: block;
+    z-index: 10;
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgb(0 0 0 / 6%);
