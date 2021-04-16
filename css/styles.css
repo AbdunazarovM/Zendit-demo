@@ -76,6 +76,7 @@ a{
 
 .nav-item-link::after{
     content: "";
+    display: block;
     margin-left: 8px;
     background-image: url(../images/vector.png);
     background-size: contain;
