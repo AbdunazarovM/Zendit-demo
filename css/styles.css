@@ -9,8 +9,9 @@ html{
 }
 
 body{
-    font-family: "Poppins","Ariya", sans-serif;
+    font-family: "Poppins","Ariyal", sans-serif;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -24,7 +25,7 @@ a{
     text-decoration: none;
 }
 
-.header{
+.site-header{
     background-color: #F6F8FF;
 }
 
@@ -37,14 +38,22 @@ a{
     padding-right: 20px;
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .title{
     color: #172F53;
-    line-height: 1.5;
 }
 
 .text{
     color: #7D7D7D;
-    line-height: 1.5;
 }
 
 /*Navbar boshlandi*/
@@ -53,7 +62,6 @@ a{
     display: flex;
     align-items: center;
     padding-top: 62px;
-    margin-bottom: 180px;
 }
 
 .logo-link{
@@ -71,10 +79,15 @@ a{
 
 .nav-item{
     margin-left: 94px;
+    position: relative;
+}
+
+.nav-item-link{
+    display: flex;
+    align-items: center;
 }
 
 .nav-item-link::after{
-    display: inline-block;
     content: "";
     margin-left: 8px;
     background-image: url(../images/vector.png);
@@ -102,7 +115,6 @@ a{
 
 .nav-item:hover .dropdawn{
     display: block;
-    z-index: 10;
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgb(0 0 0 / 6%);
@@ -135,12 +147,17 @@ a{
 /*Hero boshlandi*/
 
 .hero{
+    padding-top: 180px;
+    background-color: #F6F8FF;
+}
+
+.hero-section{
     position: relative;
-    width: 686px;
+    max-width: 686px;
     padding-bottom: 357px;
 }
 
-.hero::after{
+.hero-section::after{
     content: "";
     display: inline-block;
     position: absolute;
@@ -200,7 +217,6 @@ a{
     margin-right: 95px;
     color: #9f9f9f;
     font-size: 25px;
-    line-height: 1.5;
     padding: 31px 0 31px 40px;
     background-color: #EFEFEF;
     border-radius: 10px;
@@ -211,12 +227,10 @@ a{
     padding: 31px 88px;
     color: white;
     font-size: 25px;
-    line-height: 1.5;
     font-weight: 700;
     background-color: #21d8e3;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 /*Form tugadi*/
@@ -231,14 +245,15 @@ a{
 }
 
 
-.special-title-h2{
+.special-span{
+    display: block;
     margin: 0;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 30px;
 }
 
-.special-title-h3{
+.special-title{
     max-width: 852px;
     margin: 0 auto;
     margin-bottom: 94px;
@@ -342,11 +357,6 @@ a{
 
 /*Discount boshlabdi*/
 
-.discount{
-    max-width: 1615px;
-    margin: 0 auto;
-    margin-bottom: 180px;
-}
 
 .discount-container::after{
     content: "";
@@ -381,14 +391,12 @@ a{
     width: 950px;
     margin-bottom: 65px;
     font-size: 30px;
-    line-height: 45px;
     color: #7D7D7D;
 }
 
 .discount-button{
+    display: inline-block;
     position: relative;
-    width: 465px;
-    height: 100px;
     padding: 31px 73px;
     padding-right: 93px;
     color: #fff;
@@ -396,9 +404,8 @@ a{
     font-size: 25px;
     line-height: 37px;
     text-decoration: none;
-    background: #21D8E3;
+    background-color: #21D8E3;
     border-radius: 10px;
-    white-space: nowrap;
 }
 
 .discount-button::after{
@@ -418,7 +425,7 @@ a{
 /*PARENTSHIP BOSHLANDI*/
 
 .partner-container{
-    max-width: 1489px;
+    max-width: 1575px;
     text-align: center;
     margin-bottom: 185px;
 }
@@ -438,72 +445,45 @@ a{
 
 .companies{
     display: flex;
-    width: 1489px;
-    height: 300px;
     align-items: center;
-    padding: 0 96px;
+    justify-content: space-around;
+    padding: 105px 23px;
     box-shadow: 8px 8px 100px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 
+.partner-img{
+    display: block;
+}
+
 .partner-img:not(:first-child){
-    margin-left: 88px;
-}
-
-.shopee{
-    width:238px; 
-    height:83px;
-}
-
-.blibli{
-    width:234px; 
-    height:84px;
-}
-
-.tokopedia{
-    width:269px; 
-    height:89px;
-}
-
-.bukalapak{
-    width:300px; 
-    height:48px;
+    margin-left: 40px;
 }
 
 /*PARENTSHIP TUGADI*/
 
 /*Footer boshlandi*/
 
-.footer{
+.site-footer{
     background-color: #172F53;
+    background-image: url(../images/site-footer-bg.png);
+    background-repeat: repeat-x;
+    background-position-y: 100%;
 }
 
 .footer-container{
     max-width: 1920px;
-    background-image: url(../images/site-footer-bg.png);
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    height: 815px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 220px;
     padding-top: 95px;
 }
 
-.footer-lists{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-list:not(:last-child){
-    margin-right: 110px;
-}
-
-
 .footer-title{
-    margin-top: 0;
     margin-bottom: 54px;
     color: white;
     font-size: 27px;
     font-weight: 700;
-    line-height: 1.5;
 }
 
 .footer-text{
@@ -511,8 +491,8 @@ a{
     margin-bottom: 30px;
     color: white;
     font-size: 25px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .footer-img{
