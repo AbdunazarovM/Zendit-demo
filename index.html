@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+
+    <h1 class="visually-hidden">Zendit</h1>
+
+    <header class="site-header">
         <div class="header-container container">
             <nav class="navbar">
                 <a href="" class="logo-link"><img class="logo" src="images/logo.svg" alt="site logo" width="178" height="50"></a>
@@ -57,42 +60,48 @@
                     <a class="register title" href="#">Register</a>
                 </div>
             </nav>
-            <section class="hero">
-                <h1 class="hero-title title">Sends goods more
-                    easily and quickly</h1>
-                <p class="hero-text text">Send your package with zendit, fast and easy 
-                    delivery, express your online business.</p>
-            </section>
-
         </div>
     </header>
 
 
     <main>
+        
+        <section class="hero">
+            <div class="hero-container container">
+                <div class="hero-section">
+                    <h2 class="hero-title title">Sends goods more
+                    easily and quickly</h2>
+                    <p class="hero-text text">Send your package with zendit, fast and easy 
+                    delivery, express your online business.</p>
+                </div>
+            </div>
+        </section>
+
         <div class="form container">
             <div class="form-container">
                 <p class="input-text title">Track your packet here
                 <span class="input-span">data provided by zendit</span></p>
                 <form>
-                    <label class="form-label" for="input">
-                        <input class="input" id="input" name="tracking number" type="text" placeholder="enter the tracking number / receipt">
-                    </label>
+                    <label class="visually-hidden" for="tracking-input">Track number</label>
+                    <input class="input" id="tracking-input" name="tracking number" type="number" placeholder="enter the tracking number / receipt" required>
                     <button class="input-button" type="submit">Track parcel</button>       
                 </form>
         </div>
         </div>
     
     
-        <div class="special-offers">
+        <section class="special-offers">
             <div class="special-container container">
-                <h2 class="special-title-h2 text">Special Offer</h2>
-                <h3 class="special-title-h3 title">We offer an outstanding service
-                    on-time everytime</h3>
+                <h2 class="special-title title">
+                <span class="special-span text">Special Offer</span>
+                We offer an outstanding service
+                on-time everytime
+                </h2>
     
                 <div class="offers">
                     
                     <section class="offer">
-                        <h4 class="offer-title title local-heroes">Local Heroes</h4>
+                        <h3 class="offer-title title local-heroes">Local Heroes</h3>
                         <p class="offer-text title">
                             <span class="offer-span text">minimum distance </span>
                         10 miles</p>
@@ -101,7 +110,7 @@
                     </section>
     
                     <section class="offer">
-                        <h4 class="offer-title title airplanings">Airplanings</h4>
+                        <h3 class="offer-title title airplanings">Airplanings</h3>
                         <p class="offer-text title">
                             <span class="offer-span text">minimum distance </span>
                         25 miles</p>
@@ -110,7 +119,7 @@
                     </section>
     
                     <section class="activ">
-                        <h4 class="activ-title offer-title title speedrunner">Speedrunner</h4>
+                        <h3 class="activ-title offer-title title speedrunner">Speedrunner</h3>
                         <p class="activ-text title">
                             <span class="activ-span text">minimum distance </span>
                         150 miles</p>
@@ -119,7 +128,7 @@
                     </section>
     
                     <section class="offer">
-                        <h4 class="offer-title title local-racers">Local Racers</h4>
+                        <h3 class="offer-title title local-racers">Local Racers</h3>
                         <p class="offer-text title">
                             <span class="offer-span text">minimum distance </span>
                         215 miles</p>
@@ -128,13 +137,13 @@
                     </section>
                 </div>
             </div>
-        </div>
+        </section>
     
     
         <section class="discount">
             <div class="discount-container container">
-                <h3 class="discount-title">Get discounts up to 40% <br> 
-                    just by registering your account</h3>
+                <h2 class="discount-title">Get discounts up to 40% <br> 
+                    just by registering your account</h2>
                 <p class="discount-text text">Zendit Express Division serves time-sensitive packages and 
                     documents to domestic destinations through more than 1,500 
                     exclusive service points from pick-up to delivery spread across 
@@ -142,32 +151,41 @@
                 <a class="discount-button" href="#">Create an account now</a>
             </div>
         </section>
+
+        
         <section class="partner">
             <div class="partner-container container">
                 <h2 class="partner-title text">Partnership</h2>
                 <p class="partner-text title">trusted by more than 150+ big companies</p>
                 <div class="companies">
-                    <img class="partner-img shopee" src="images/shopee.png" alt="shopee" width="238" height="83">
-                    <img class="partner-img blibli" src="images/blibli.png" alt="blibli" width="234" height="84">
-                    <img class="partner-img tokopedia" src="images/tokopedia.png" alt="tokopedia" width="269" height="89">
-                    <img class="partner-img bukalapak" src="images/bukalapak.png" alt="bukalapak" width="300" height="48">
+                    <a href="#">
+                        <img class="partner-img shopee" src="images/shopee.png" alt="shopee" width="238" height="83">
+                    </a>
+                    <a href="#">
+                        <img class="partner-img blibli" src="images/blibli.png" alt="blibli" width="234" height="84">
+                    </a>
+                    <a href="#">
+                        <img class="partner-img tokopedia" src="images/tokopedia.png" alt="tokopedia" width="269" height="89">
+                    </a>
+                    <a href="#">
+                        <img class="partner-img bukalapak" src="images/bukalapak.png" alt="bukalapak" width="300" height="48">
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="footer-container container">
-            <ul class="footer-lists">
-            <li class="footer-list">
+            <section class="footer-list">
                 <h3 class="footer-title">Information</h3>
                 <ul>
                     <li class="footer-text"> <a class="footer-text" href="#"> FAQ </a></li>
                     <li class="footer-text"> <a class="footer-text" href="#"> Terms & Conditions </a></li>
                     <li class="footer-text"> <a class="footer-text" href="#"> Privacy Policy </a></li>
                 </ul>
-            </li>
-            <li class="footer-list">
+            </section>
+            <section class="footer-list">
                 <h3 class="footer-title">Product & Service</h3>
                 <ul>
                     <li class="footer-text"> <a class="footer-text" href="#"> Shipment</a></li>
@@ -177,30 +195,30 @@
                     <li class="footer-text"> <a class="footer-text" href="#"> Best</a></li>
                     <li class="footer-text"> <a class="footer-text" href="#"> Gokils</a></li>
                 </ul>
-            </li>
-            <li class="footer-list">
+            </section>
+            <section class="footer-list">
                 <h3 class="footer-title">Info Contact</h3>
                 <ul>
-                    <li class="footer-text">Jl. Ir. H. Juanda 3 No. 17-19, 
+                    <li class="footer-text"> <address class="footer-text" href="#"> Jl. Ir. H. Juanda 3 No. 17-19, 
                         RT.008/RW.002, Kel. Kebon 
                         Kelapa Kec. Gambir, Jakarta 
-                        Pusat 10120</li>
+                        Pusat 10120</address>
+                    </li>
                     <li class="footer-text"> <a class="footer-text" href="#"> customer.care@zendit.com </a>
                     </li>
                 </ul>
-            </li>
-            <li class="footer-list">
+            </section>
+            <section class="footer-list">
                 <h3 class="footer-title">Download App</h3>
                 <ul>
                     <li>
-                        <a href="#"><img class="footer-img" src="images/google-play.png" alt="google-play" width="203" height="62"></a>
+                        <a href="#" target="_blank"><img class="footer-img" src="images/google-play.png" alt="google-play" width="203" height="62"></a>
                     </li>
                     <li>
-                        <a href="#"><img class="footer-img" src="images/app-store.png" alt="app-store" width="203" height="62"></a>
+                        <a href="#" target="_blank"><img class="footer-img" src="images/app-store.png" alt="app-store" width="203" height="62"></a>
                     </li>
                 </ul>
             </li>
-        </ul>
     </div>
     </footer>
 
